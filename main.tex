@@ -7,6 +7,7 @@
 \usepackage{wrapfig}
 \renewcommand\thesection{\arabic{section}}
 \usepackage{listings}
+\usepackage{url}
 
 
 
@@ -15,7 +16,14 @@
 
 %------- Introduction begins -----------------------
 \section{Introduction}
-More than half of elements heavier than iron, including platinum and gold, are thought to be the result of the astrophysical rapid neutron capture process (r-process) of nucleosynthesis. Due to the underlying physics, the r-process carves a path through highly neutron rich regions of the nuclear chart, far from stability. The exact path remains a mystery, as most of the nuclei in question have never been observed, and there is little experimental data \cite{cowan}{}. By determining the properties of these exotic nuclei, for instance their masses, the path of the r-process can be better constrained.
+More than half of elements heavier than iron, including platinum and gold, are thought to be the result of the astrophysical rapid neutron capture process (r-process) of nucleosynthesis. Due to the underlying physics, the r-process carves a path through highly neutron rich regions of the nuclear chart, far from stability. The exact path remains a mystery, as most of the nuclei in question have never been observed (see figure~\ref{fig:unknownChart}), and there is little experimental data \cite{cowan}{}. By determining the properties of these exotic nuclei, for instance their masses, the path of the r-process can be better constrained. Without reliable experimental data, r-process models have, as yet, been unable to reproduce observed elemental abundances.
+
+\begin{figure}[h]
+\label{fig:unknownChart}
+\centering
+\includegraphics[height=10cm]{nuclearChart}
+\caption{A nuclear chart of proton number against neutron number, with stable and exotic nuclei shaded, along with the path of the r-process. The r-process path traverses the extremely unstable, neutron rich region of the nuclear chart\cite{otsuka}{}.}
+\end{figure}
 
 
 Here, data from photon-induced multi-proton knockout experiments is analysed to determine the properties of highly neutron rich nuclei, far from stability. Such exotic nuclei are possible r-process path candidates. The data come from experiments by the A2 Collaboration using the Crystal Ball detector, currently situated at the Mainz Microtron (MAMI) in Germany. By studying reactions where relatively large numbers of protons have been knocked out, and utilising experiments that have used heavier targets than usual, such as lead, it is hoped that current knowledge can be improved upon.  
@@ -55,7 +63,14 @@ Regardless of the size of the neutron flux however, neutrons cannot be captured 
 
 A sufficiently high neutron flux will not be maintained indefinitely, and will cutoff at some point, causing the r-process reactions to freeze out. Once the neutron flux has dropped, nuclei rapidly $\beta$-decay back to a stable isobar, with individual nuclide abundances being determined by the path of the r-process.
 
-Nuclear shell structure is very important, essentially defining the synthesis pathway, with shell closures at magic neutron numbers $N=50,82$, and $126$ representing major waiting points. Magic number nuclei have substantially increased $\beta$-decay half lives\cite{iliadis}{}, causing a build up in nuclide abundance. This gives rise to three peaks in the observed abundances of r-process nuclei\cite{b2fh}{}. It is not certain however, that the nuclear shell structure is the same for nuclei far from stability, or even if it persists at all\cite{warner}{}. If shells are quenched or occur at different proton and neutron numbers, the path of the r-process would be significantly altered.
+Nuclear shell structure is very important (see figure~\ref{fig:path}), essentially defining the synthesis pathway, with shell closures at magic neutron numbers $N=50,82$, and $126$ representing major waiting points. Magic number nuclei have substantially increased $\beta$-decay half lives\cite{iliadis}{}, causing a build up in nuclide abundance. This gives rise to three peaks in the observed abundances of r-process nuclei\cite{b2fh}{}. It is not certain however, that the nuclear shell structure is the same for nuclei far from stability, or even if it persists at all\cite{warner}{}. If shells are quenched or occur at different proton and neutron numbers, the path of the r-process would be significantly altered.
+
+\begin{figure}[ht]
+\label{fig:path}
+\centering
+\includegraphics[height=8cm]{RProcessPath}
+\caption{Nuclear chart of proton number against neutron number. At magic (shell closure) numbers, the r-process turns towards the line of stability and ``waits" for $\beta$ decay\cite{seeger}{}.}
+\end{figure}
 
 With knowledge of the path by which the r-process proceeds, and various experimental data such as reaction cross-sections and nuclei mass,  it is then possible to calculate the abundances of stable nuclides that should be observed in the universe\cite{seeger}{}.
 
@@ -66,8 +81,7 @@ Using photons is advantageous, as their interaction with the nucleus is purely e
 
 The wavelength of the photon determines the size of structure that it will interact with. As the energy of a photon is related to its wavelength by $E=\frac{hc}{\lambda}$, where $h$ and $c$ are Planck's constant and the speed of light respectively, it is thus the energy of the photon which is important. The cross-section for photon absorption depends on a number of different reaction mechanism contributions, which come in to play in different energy ranges. For example at low energies of $\sim30MeV$, the wavelength of a photon is such that it can couple to the entire nucleus as a whole, a phenomenon known as the giant dipole resonance. At higher energies of around $\sim300MeV$, the wavelength of a photon is sufficiently small to probe the constituent quarks of nucleons, leading to observations of the $\Delta$-resonance as individual nucleons are promoted to excited states.
 
-Agreement is currently lacking as to the relative importance of the mechanisms which contribute to the single proton knockout reaction, $(\gamma,p)$\cite{meucci}{}. Some evidence points towards a mainly single step, direct knockout mechanism in which the photon interacts directly with the knocked-out nucleon\cite{boffi}{}. Experiments using polarisation-tagged photon beams however, indicate that a more prominent role is played by complex, multi-step mechanisms such as Meson Exchange Currents (MEC)\cite{bobeldijk}{}. Nuclear force is transmitted between nucleons by exchange of mesons, with the lightest $\pi$-mesons being particularly important for long-range (1-1.5fm) attraction between nucleons.
-%Cite some text book for MEC.
+Agreement is currently lacking as to the relative importance of the mechanisms which contribute to the single proton knockout reaction, $(\gamma,p)$\cite{meucci}{}. Some evidence points towards a mainly single step, direct knockout mechanism in which the photon interacts directly with the knocked-out nucleon\cite{boffi}{}. Experiments using polarisation-tagged photon beams however, indicate that a more prominent role is played by complex, multi-step mechanisms such as Meson Exchange Currents (MEC)\cite{bobeldijk}{}. Nuclear force is transmitted between nucleons by exchange of mesons, with the lightest $\pi$-mesons being particularly important for long-range (1-1.5fm) attraction between nucleons\cite{anwar}{}.
 This leads to correlations between different nucleons, which can become important for how nucleon knockouts proceed.
 
 MECs are also important in two proton knockout reactions, $(\gamma,pp)$, along with isobar currents, where the nucleons become excited, and direct knockout of correlated pairs. Numerous mechanisms make different contributions to the knockout cross section, depending on factors such as the energy regime\cite{robinson}{}. The number of coincident protons knocked out in a single reaction is determined here, and reaches up to (9). An understanding of the mechanisms leading to such reactions is currently lacking.
@@ -86,6 +100,10 @@ The photons beam used is produced by bremstrahlung using a metal foil radiator\c
 %------- Literature Review begins -------------------------
 \section{Literature Review}
 
+Work on determining the abundances of chemical elements began, far removed from nuclear physics, in the field of geochemistry in the late 1800s\cite{clarke}. Using basic analysis, estimates were made of the abundance of chemical elements in the Earth's crust. Studies of meteorites paved the way for better estimates of the average abundances of elements in nature, rather than just on Earth, leading to a classic paper in 1937\cite{goldschmidt}{}. This acted as a springboard for much of what followed, and by 1956, the underlying nuclear physics processes that might have been responsible for the observed abundances were being considered\cite{suess}{}. In probably the most important paper in nuclear astrophysics, a comprehensive treatment of nucleosynthesis mechanisms, including the r-process, was published in 1957\cite{b2fh}{}. This laid out all of the key nucleosynthesis processes and analysed them within the context of a coherent framework, the theory of stellar nucleosynthesis. For this, as well as other contributions to astrophysics, one of the paper's authors was awarded the Nobel prize. Calculations of element abundances using the r-process were conducted in 1965\cite{seeger}{}, though then, as now, the lack of empirical data greatly affected accuracy. Since the 1960s, there has been little progress made in further advancing the conceptual understanding of the r-process. The precision of certain model parameters has been improved upon however, with much more now being known about exotic nuclei\cite{moller}{}. In spite of this, the problem remains that calculated r-process abundances do not agree with the observed abundances.
+
+In the last decade, a new generation of radioactive ion beam facilities has been able to access the required nuclei, and experimental data such as $\beta$-decay half-lives of exotic nuclei are now becoming more available\cite{hosmer}{}$^{,}$\cite{lorusso}{}. Accessing exotic nuclei via photon-induced proton knockout has not been seriously attempted previously, and as such, much of the physics of knockout of more than two protons is currently unknown.
+
 ***Possible cut (
 Photo-disintegration of an atomic nucleus was first observed in 1934, when high energy gamma rays were used to cause disintegration of a deuteron\cite{chadwick}{}. Although this landmark experiment is known for the  determination of the mass of the newly discovered neutron, it also stimulated interest in photon induced, `photonuclear' reactions. In the same year, neutrons were detected from a beryllium nucleus excited with gamma rays\cite{szilard}{}.
 
@@ -94,6 +112,25 @@ The advent of the synchrotron accelerator in the late 1940s facilitated several 
 In spite of the number of experiments, few real advances were made in understanding the reaction mechanisms that governed the photonucleon knockouts. As with the synchrotron decades before, the introduction of photon tagging at high duty factor beam facilities such as MAMI during the 1980s\cite{anthony} lead to something of a nuclear Renaissance. Within five years, angular and energy resolutions were sufficient to determine the shell that photo-nucleons had been knocked out of\cite{dancer}{}. In 1992, a microscopic model of how individual mechanisms contribute to nucleon knockout was published; the so-called Valencia model\cite{valencia}{}. Photon induced nucleon knockout reactions have since become a vital tool in the understanding of inter-nucleon interactions, such as short-range correlations between nucleons\cite{giusti}{}.
 )***
 
+\section{Method}
+In order to calculate the mass of the residual nucleus after proton knockout, a missing mass reconstruction was employed. Essentially, this method utilises basic relativistic conservation of four-momentum. If the Lorentz vectors of the incoming photon beam and the initial state target are known, and those of the knocked out protons can be measured, then the ``missing" mass of the final state residual nucleus can be determined according to (\ref{eq:missingMass}).
+
+\begin{equation}
+\label{eq:missingMass}
+M_{Missing} = (P_{Beam} + P_{Target} - \sum\limits_{i=1}^{N} P_{i} )^{2}
+\end{equation}
+
+Where in (\ref{eq:missingMass}), $M_{Missing}$ is the missing mass, the mass of the residual nucleus in this case, $P_{Beam}$ and $P_{Target}$ are the Lorentz vectors of the beam and target, and the sum is the sum of the Lorentz vectors of the $N$ knocked out protons.
+
+However, before the data could be analysed, it was first necessary to calibrate the proton energies measured in the Crystal Ball.
+
+\subsection{Energy Loss Calibration}
+Proton energies measured in the Crystal Ball detectors are not the true values, and must be corrected for energy losses from several sources. Firstly, knocked out protons must escape the target, which causes them to lose energy. This is especially important in the case of lead, due to its high stopping power, but is significant for all target materials. Any material within the Crystal Ball also contributes to particle energies losses, for instance the PID and beam pipe lie in the path of the protons. Finally, energy loss in the NaI detector crystals due to light attenuation must be corrected for. 
+
+The ionisation/excitation energy losses in the materials were simulated using the Geant4 simulation toolkit. Geant4 uses Monte-Carlo techniques for ``simulation of the passage of particles through matter"\cite{geant4}{}. The simulation geometry borrowed heavily from the setup developed at the University of Edinburgh for the A2 Collaboration\cite{lorenzo}{}. Protons were generated isotropically from the centre of the target with a given vertex energy. By comparing the energy at the detector with the initial vertex energy, it was possible to determine the energy loss of the protons. This was used to determine required angular cuts to the data. Energy loss is strongly dependent on the angle $\theta$, primarily as this determines what thickness of target the protons must escape from. Certain angles could also be cut, for instance the ``straight-through" angles on the beam axis, where the Crystal Ball does not have detectors, and angles where the protons must traverse particular support structures. Only protons detected within $22-76^{\circ}$ considered, as well as those within the same region plus $180^{\circ}$ due to the $\theta$ symmetry of the detector geometry. A study of the dependence of energy loss on $\phi$ was also conducted. Although there is a slight $\phi$ dependence with a periodic nature repeating over $7^{\circ}$ due to the fact that the PID is actually a polygon rather than a cylinder, this was not taken into account. The statistics of the $\theta$ study lead to an error $\sim 2\%$, and the $\phi$ variation in energy loss was deemed sufficiently small as to be negligible in comparison.
+
+Once the cuts had been identified, the simulation was run at a single angle $\theta$, with protons being generated with random energies between $30-50MeV$. This was repeated in $2^{\circ}$ increments in $\theta$ using a million events per run.
+
 
 \clearpage
 \begin{thebibliography}{99}
@@ -101,6 +138,8 @@ In spite of the number of experiments, few real advances were made in understand
 %--------------------------------------------------------------------------
 \bibitem{cowan} Cowan, J.J. \& Thielemann, F.-K. ``R-Process Nucleosynthesis in Supernovae", \textit{Physics Today} \textbf{57}, pp 47 (2004).
 %--------------------------------------------------------------------------
+\bibitem{otsuka} Otsuka, T. ``Exotic nuclei and nuclear forces", \textit{Physica Srcipta} \textbf{2013}, T152 (2013).
+%------------------------------------------------------------------------
 \bibitem{thielemann} Thielemann, F.-K. et al. ``What are the astrophysical sites for the r-process and the production of heavy elements?", \textit{Progress in Particle and Nuclear Physics} \textbf{66}, pp346 (2011).
 %--------------------------------------------------------------------------
 %---------------- Introduction ends ----------------------------------------
@@ -123,6 +162,8 @@ In spite of the number of experiments, few real advances were made in understand
 %------------------------------------------------------------------------------
 \bibitem{bobeldijk} Bobeldijk, I. et al. "Photon induced proton knockout from $^{208}$Pb", \textit{Phys. Lett. B} \textbf{356}, pp13 (1995). 
 %------------------------------------------------------------------------------
+\bibitem{anwar} Anwar, K. ``Nuclear Physics", Berlin : Springer (2014).
+%----------------------------------------------------------------------------------
 \bibitem{tarbert} Tarbert, C.M. et al. ``Incoherent Neutral Pion Photoproduction on $^{12}$C", \textit{Phys. Rev. Lett.} \textbf{100}, 132301 (2008).
 %-----------------------------------------------------------------------------
 \bibitem{starostin} Starostin, A. et al. ``Measurement of $K^{-}p \rightarrow \eta \Lambda$ near threshold", \textit{Phys. Rev. C} \textbf{64}, 055205 (2001).
@@ -138,8 +179,19 @@ In spite of the number of experiments, few real advances were made in understand
 %--------------- Background Ends ---------------------------------------------
 %--------------- Literature Review begins -----------------------------------
 %----------------------------------------------------------------------------
+\bibitem{clarke} Clarke, F.W. ``The relative abundances of the chemical elements", \textit{Bull. Phil. Soc. Washington} \textbf{11}, pp131 (1889).
+%-----------------------------------------------------------------------------
+\bibitem{goldschmidt} Goldschmidt, V.M. ``The Principles Of Distribution Of Chemical Elements In Minerals And Rocks : The Seventh Hugo Miller Lecture Delivered Before The Chemical Society On March 17th 1937", \textit{Journal of the Chemical Society (Resumed)} \textit{0}, pp655 (1937).
+%-----------------------------------------------------------------------------
+\bibitem{suess} Suess, H.E., Urey, H.C. ``Abundances of the Elements", \textit{Rev. Mod. Phys.} \textit{28}, pp53 (1956).
+%----------------------------------------------------------------------------
+\bibitem{moller} M\"oller, P., Nix, J.R., Kratz, K.-L. ``NUCLEAR PROPERTIES FOR ASTROPHYSICAL AND RADIOACTIVE-ION-BEAM APPLICATIONS", \textit{Atomic Data And Nuclear Data Tables} \textbf{66}, pp131 (1997).
 \bibitem{chadwick} Chadwick, A. \& Goldhaber, M.``A `Nuclear Photo-effect': Disintegration of the Diplon by $\gamma$-Rays", \textit{Nature} \textbf{134}, pp237 (1934).
 %----------------------------------------------------------------------------
+\bibitem{hosmer} Hosmer, P. et al. ``Half-lives and branchings for $\beta$-delayed neutron emission for neutron-rich Co–Cu isotopes in the r-process", \textit{Phys. Rev. C} \textbf{82}, 025806 (2010).
+%----------------------------------------------------------------------------
+\bibitem{lorusso} Lorusso, G. et al. ``$\beta$-Decay Half-Lives of 110 Neutron-Rich Nuclei across the $N=82$ Shell Gap: Implications for the Mechanism and Universality of the Astrophysical r Process", \textit{Phys. Rev. Lett.} \textbf{114}, 192501 (2015).
+%------------------------------------------------------------------------------
 \bibitem{szilard} Szilard, L. \& Chalmers, T.A. ``Detection of Neutrons Liberated from Beryllium by Gamma Rays: a New Technique for Inducing Radioactivity", \textit{Nature} \textbf{134}, pp494 (1934).
 %----------------------------------------------------------------------------
 \bibitem{perlman} Perlman, M.L. \& Friedlander, G. ``Relative Yields of Some X-Ray Induced Nuclear Reactions", \textit{Phys. Rev.} \textbf{74}, pp442 (1948).
@@ -163,6 +215,10 @@ carbon and calcium", \textit{Nuclear Physics B} \textbf{1}, pp483 (1967).
 %-----------------------------------------------------------------------------
 \bibitem{giusti} Giusti, C. \& Pacati, F.D. ``Photon-induced two-nucleon knockout reactions to discrete final states", \textit{Nuclear Physics A} \textbf{641}, pp297 (1998).
 %----------------------- Literature Review ends -------------------------------
+%----------------------- Method begins ----------------------------------------
+\bibitem{geant4} Agostinelli, S. et al. ``Geant4 - a simulation toolkit", \textit{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment} \textbf{506}, pp250 (2003).
+%------------------------------------------------------------------------------
+\bibitem{lorenzo} Please see \url{http://www2.ph.ed.ac.uk/nuclear/G4/} for more information.
 
 \end{thebibliography}
 \end{document}
